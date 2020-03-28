@@ -1,4 +1,4 @@
-var aux;
+var aux;// esta variable guardara el indice del dato que querramos  actualizar
 var datos= new Array();
 datos =['Diego','Gerson','Atomsk','Alex','Ale','Mechon','Bando','Renzo'];
 
@@ -29,7 +29,7 @@ function editar(){
 
 function eliminar(id){
     console.log("dato borrado : ",datos[id]);
-    datos.splice(id,1);
+    datos.splice(id,1); //elimina la variable del indice "id" y crea un nuevo arreglo sin ese indice
     mostrarDatos();
 }
 
